@@ -1,0 +1,237 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* border: solid 2px black; */
+  scroll-behavior: smooth;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+}
+
+
+.heroBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: red;
+  height: 50vmin;
+  z-index: -1;
+  background-attachment: fixed;
+
+}
+#background_video {
+  object-fit: cover;
+  width: 100%;
+}
+.heroBanner h2 {
+  font-size: 6rem;
+  position: fixed;
+  z-index: 90%;
+}
+.heroBanner h4 {
+  position: fixed;
+  font-size: 2rem;
+  z-index: 90%;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+.mainMainContainer {
+  z-index: -2;
+}
+
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto;
+
+  grid-column-gap: 10px;
+
+  margin-top: 30px;
+  margin-left: 20px;
+  /* margin-right: 50px; */
+  position: relative;
+
+}
+
+#sideBar {
+  position: fixed;
+  grid-column: 1;
+}
+.sideBar, .sideBar a {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: space-around;
+  font-size: 3rem;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  margin-bottom: 15px;
+  z-index: 80;
+}
+.sideBar a {
+  color: black;
+  text-decoration: none;
+}
+.sideBar a:hover {
+  color: red;
+}
+
+.linkDiv {
+  grid-column: 2;
+}
+.contentDiv {
+  grid-column: 2;
+  position: relative;
+
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 20px;
+
+  border-bottom: solid 2px black;
+  border-left:  solid 2px black;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.newItem {
+}
+
+.newItem img {
+  height: 20vmax;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+.glideBox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.glideBox img {
+  width: 60vmin;
+}
+
+
+
+
+
+.bottomDiv {
+  border-top: solid 2px black;
+  margin-top: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.paragraphContainer {
+  grid-column: 2;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: 'Rubik', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.userInputBox {
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 4rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.userInputBox button {
+  font-family: 'Teko', sans-serif;
+  font-size: 4rem;
+  padding-bottom: -50px;
+  position: absolute;
+}
+.userInputBox button:hover {
+  font-family: serif;
+  position: relative;
+  color:red;
+}
+input {
+  font-size: 2rem;
+}
+
+.bottomDiv p {
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.moreInfoDiv {
+  text-align: center;
+  /* display: grid; */
+  /* grid-template: 1fr / 1fr 1fr; */
+}
+#vid1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+#vid2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+
+.newItemHeading {
+  display: inline-block;
+  text-align: center;
+  /* justify-content: space-around; */
+  padding-bottom: 5px;
+}
+
+.bottomBar, .bottomBar a {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: space-around;
+  font-size: 3rem;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  /* margin-bottom: 15px; */
+  z-index: 80;
+  padding-left: 20px;
+}
+.bottomBar a {
+  color: black;
+  text-decoration: none;
+}
+.bottomBar a:hover {
+  color: red;
+}
+
+.transparentSpacer {
+  height: 40vmin;
+  background-color: transparent;
+}
